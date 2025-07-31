@@ -1,14 +1,16 @@
 #include<stdio.h>
-#include<ctype.h>
-void converttolower(char ch)
-{
-	char lower = tolower(ch);
-	printf("lowercase character : %c\n",lower);
+#include<stdlib.h>
+void generateandsum(){
+	int a,b,sum;
+	a=rand()%100;
+	b=rand()%100;
+	sum=a+b;
+	printf("Random number 1:%d\n",a);
+	printf("random number 2: %d\n",b);
+	printf("sum=%d\n",sum);
 }
 int main()
 {
-	char upper;
-	printf("enter the uppercase character:\n");
-	scanf("%c",&upper);
-	converttolower(upper);
+	generateandsum();
+	return(0);
 }
